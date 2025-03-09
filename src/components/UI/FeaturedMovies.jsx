@@ -9,7 +9,7 @@ const FeaturedMovies = () => {
       fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=${import.meta.env.VITE_API_KEY}&s=albela&page=1`)
          .then((response) => response.json())
          .then((data) => {
-            if (data) {
+            if (data && data.Search) {
                setMovies(data.Search);
             }
             setLoading(false);

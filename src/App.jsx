@@ -22,7 +22,8 @@ function App() {
         { path: "/", element: <Home /> },
         { path: "/about", element: <About /> },
         {
-          path: "/movie", element: <MovieList />,
+          path: "/movie", 
+          element: <MovieList />,
           loader: GetMoviesData,
         },
         {
