@@ -25,7 +25,7 @@ const FeaturedMovies = () => {
 
    return (
       <div className="featured-section">
-         <h2>🔥 Featured Movies</h2>
+         <h2>🔥 Featured Movies list</h2>
 
          {loading ? (
             <p>Loading movies...</p>
